@@ -1,0 +1,38 @@
+                                TODO:
+
+1. DATA:
+    - Structure: Object (Dictionary):
+        + Key   = position
+        + Value = number
+
+2. Board:
+    - Structure: DOM & DATA
+    - Tiles with both values and colors
+    - Empty tiles
+    - Styling
+
+3. New Game:
+    - Generate two new (random) tiles
+
+4. Moves:
+    - Keyboard presses
+    - Generate one new tile on move:
+        + Random position
+        + Empty spaces only
+        + AFTER combining tiles
+        + ONLY after legal a move
+    - Probability of 2 vs. 4?
+
+5. Game Logic:
+    - Combining & Moving tiles
+    - Four direction
+    - Simple cases
+    - Complex cases
+    - Empty tiles?
+    - Game over - board full, no moves
+
+6. Score:
+    - Current
+    - Best
+    - Calculate?
+    - Leaderboard

@@ -1,0 +1,283 @@
+body {
+    background-color: #faf8ef;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.info {
+    margin-right: 35px;
+    margin-left: 5px;
+    color: #776e65;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.game_name {
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: #776e65;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+
+b.link {
+    border-bottom: 1px solid #776e65;
+}
+
+b.link:hover {
+    cursor: pointer;
+    font-style: italic;
+}
+
+.action_boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.scores {
+    display: flex;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+}
+
+.score_box {
+    padding: 5px 30px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bbada0;
+    border-radius: 5px;
+    height: 39px;
+    overflow: hidden;
+}
+
+.button, button{
+    padding: 5px 15px;
+    margin-top: 25px;
+    background-color: #8f7a66;
+    border: none;
+    border-radius: 5px;
+    color: #f9f6f2;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.button:hover, button:hover {
+    cursor: pointer;
+    background: #f69664;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.game_board {
+    display: grid;
+    grid-template-columns: 440px;
+    grid-template-rows: repeat(4, 100px);
+    row-gap: 10px;
+    column-gap: 10px;
+    background-color: #bbada0;
+    margin: 30px 150px;
+    border: 10px solid #bbada0;
+    border-radius: 5px;
+}
+
+.game_over_display, .leaderboard_screen, .submit_score_screen {
+    display: none;
+    position: absolute;
+    background-color: rgba(238, 228, 218);
+    margin: 30px 150px;
+    border-radius: 5px;
+    width: 460px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game_over_display > p {
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif;
+    color: #776e65;
+    font-weight: 500;
+    margin: 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.tile {
+    background-color: rgba(238, 228, 218, 0.35);
+    border-radius: 5px;
+    font-size: 40px;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 28px;
+    color: #776e65;
+    font-family: 'Rubik', sans-serif;
+}
+
+.tile_2 {
+    background-color: #eee4da;
+}
+
+.tile_4 {
+    background: #eee1c9;
+}
+
+.tile_8 {
+    color: #f9f6f2;
+    background: #f3b27a;
+}
+
+.tile_16 {
+    color: #f9f6f2;
+    background: #f69664;
+}
+
+.tile_32 {
+    color: #f9f6f2;
+    background: #f77c5f;
+}
+
+.tile_64 {
+    color: #f9f6f2;
+    background: #f75f3b;
+}
+
+.tile_128 {
+    color: #f9f6f2;
+    background: #edd073;
+}
+
+.tile_256 {
+    color: #f9f6f2;
+    background: #edcc62;
+}
+
+.tile_512 {
+    color: #f9f6f2;
+    background: #edc950;
+}
+
+.add_score {
+    margin-top: 5px;
+    color: #776e65;
+    font-size: 20px;
+}
+
+.add_score_animation {
+    animation: move_up 700ms ease-in;
+}
+
+@keyframes move_up {
+    0% {
+        margin-top: 5px;
+        opacity: 2;
+    }
+    100% {
+        margin-top: -65px;
+        opacity: 0;
+    }
+}
+
+.competition {
+    display: flex;
+    margin-top: -30px;
+    justify-content: space-between;
+    width: 333px;
+}
+
+.submit_score, .leaderboard_button, .go_back {
+    font-size: 17px;
+    padding: 7px 17px;
+}
+
+.go_back {
+    display: none;
+}
+
+.leaderboard_screen, .submit_score_screen {
+    margin: 148px 150px;
+}
+
+.leaderboard_screen {
+    border: 10px solid #bbada0;
+    border-collapse: collapse;
+}
+
+.submit_score_screen {
+    border: 10px solid #bbada0;
+    width: 440px;
+    height: 430px;
+}
+
+td, th {
+    border-right: 1.5px solid #bbada0;
+    border-bottom: 1px solid #bbada0;
+    padding: 7.1px;
+}
+
+td:last-child, th:last-child {
+    border-right: none;
+}
+
+tr:first-child {
+    background-color: #776e65;
+    color:#faf8ef;
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+}
+
+td {
+    text-align: center;
+    color: #49443f;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+}
+
+.player_name {
+    width: 150px;
+}
+
+.player_score {
+    width: 205px;
+}
+
+.enter_player_name {
+    width: 250px;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid #776e65;
+    color: #49443f;
+    margin: 15px 0 0;
+    background-color: #faf8ef;
+}
+
+.text {
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #776e65;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+
+button {
+    font-size: 15px;
+}

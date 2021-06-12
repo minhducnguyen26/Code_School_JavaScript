@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&display=swap" rel="stylesheet">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+
+    <div class="player_turn">
+        <div class="player_box player_box_1 player_x">
+            <div class="player_name">X</div>
+            <div class="player_x_score">-</div>
+        </div>
+
+        <div class="player_box player_box_2">
+            <div class="player_name">O</div>
+            <div class="player_o_score">-</div>
+        </div>
+    </div>
+
+    <div class="game_board">    
+        <div class="box row_1 col_1 diag_1"></div>
+        <div class="box row_1 col_2"></div>
+        <div class="box row_1 col_3 diag_2"></div>
+        <div class="box row_2 col_1"></div>
+        <div class="box row_2 col_2 diag_1 diag_2"></div>
+        <div class="box row_2 col_3"></div>
+        <div class="box row_3 col_1 diag_2"></div>
+        <div class="box row_3 col_2"></div>
+        <div class="box row_3 col_3 diag_1"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

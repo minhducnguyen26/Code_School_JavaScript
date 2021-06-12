@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <title>2048</title>
+</head>
+<body>
+    <header>
+        <div class="info">
+            <div class="game_name">2048</div>
+            <div class="instruction">Join the tiles, get to <b>2048!</b></div>
+            <div>
+                <b class="link">How to play   
+                    <span><i class="arrow las la-arrow-right"></i></span>
+                </b>
+            </div>
+        </div>
+
+        <div class="action_boxes">
+            <div class="scores">
+                <div class="score_box">
+                    <div class="score_type">Score</div>
+                    <div class="current_score">0</div>
+                    <div class="add_score"></div>
+                </div>
+
+                <div class="score_box">
+                    <div class="score_type">Best</div>
+                    <div class="best_score">0</div>
+                </div>
+            </div>
+
+            <div class="button new_game">New Game</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="game_board">
+            <!--To be created with JavaScript-->
+        </div>
+
+        <div class="game_over_display">
+            <p>Game Over!</p>
+            <div class="button try_again">Try again</div>
+        </div>
+    </main>
+
+    <div class="competition">
+        <div class="button submit_score">Submit Score</div>
+        <div class="button go_back go_back_from_submit_score">Back</div>
+        <div class="button leaderboard_button">Leaderboard</div>
+        <div class="button go_back go_back_from_leaderboard">Back</div>
+    </div>
+
+    <div class="submit_score_screen">
+        <div class="text">Please enter your name</div>
+        <div class="input_wrapper">
+            <input class="enter_player_name" type="text">
+        </div>
+        
+        <button class="submit">Submit</button>
+    </div>
+
+    <table class="leaderboard_screen">
+        <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        <!--The content will be created with JavaScript-->
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
