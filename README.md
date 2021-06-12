@@ -5,7 +5,7 @@ Code School is an intensive nine-week course for students who are interested in 
 During the second week attending Code School, I learned more about JavaScript and had a chance to advance my skills in programing and problem solving. 
 
 I created two simple web applications:
-- Math Quiz : give the user an equation, get the user's answer, and check if the answer is correct.
+- Math Quiz: give the user an equation, get the user's answer, and check if the answer is correct.
 - Tic Tac Toe: build the classic Tic Tac Toe game, the purpose is to understand what's behind the game and how it works, rather than creating the game itself.
 
 and a version of the popular 2048 game. 
